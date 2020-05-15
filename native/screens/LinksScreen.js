@@ -31,7 +31,7 @@ function OptionButton({ icon, label, onPress, isLastOption }) {
     <RectButton style={[styles.option, isLastOption && styles.lastOption]} onPress={onPress}>
       <View style={{ flexDirection: 'row' }}>
         <View style={styles.optionIconContainer}>
-          <Ionicons name={icon} size={22} color="rgba(0,0,0,0.35)" />
+          <Ionicons name={icon} size={30} color="rgba(0,0,0,0.35)" />
         </View>
         <View style={styles.optionTextContainer}>
           <Text style={styles.optionText}>{label}</Text>
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fafafa',
+   // backgroundColor: '#000',
   },
   contentContainer: {
     paddingTop: 15,
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
   },
   option: {
     backgroundColor: '#fdfdfd',
+    //backgroundColor: '#000',
     paddingHorizontal: 15,
     paddingVertical: 15,
     borderWidth: StyleSheet.hairlineWidth,
